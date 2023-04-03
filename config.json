@@ -1,0 +1,12 @@
+{
+  "apiKey": "783JgPlzX__X9cwL781qN52bh5w",
+  "dbName": "csgoitems",
+  "pass": "12345",
+  "appId": "730",
+  "server": "localhost",
+  "port": "5432",
+  "user": "postgres",
+  "baseApiUrl": "https://steamcommunity.com/market/search/render/?",
+  "listingsUrl": "https://steamcommunity.com/market/listings/",
+  "chromeDriver": "C:\\Program Files\\ChromeDriver\\chromedriver.exe"
+}
