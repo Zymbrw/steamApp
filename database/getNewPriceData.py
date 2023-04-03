@@ -26,7 +26,7 @@ market_hash_names = [item.market_hash_name for item in session.query(Item).all()
 print(f"Retreived {len(market_hash_names)} items from database.")
 print(f"Proceed to get buy/sell orders data for these items...")
 
-for i in range(3):
+for i in range(len(market_hash_names)):
     name = market_hash_names[i]
     print(f"Item {i+1}: {name}")
     # Specify the URL of the webpage you want to open

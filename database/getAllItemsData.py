@@ -20,12 +20,13 @@ def insert_items_from_api(api_url, db_conn_str):
     with engine.begin() as conn:
         for item in item_data['results']:
             # Insert the item into the database
-            insert_stmt = item_table.insert().values(
-                market_hash_name=item['hash_name'],
-                color=item['asset_description']['name_color'],
-                image=item['asset_description']['icon_url']
-            )
-            conn.execute(insert_stmt)
+            if item['asset_description']["tradable"] == 1:
+                insert_stmt = item_table.insert().values(
+                    market_hash_name=item['hash_name'],
+                    color=item['asset_description']['name_color'],
+                    image=item['asset_description']['icon_url']
+                )
+                conn.execute(insert_stmt)
 
 for i in range(0,20000//100):
    insert_items_from_api(f"{get_baseApiUrl()}search_descriptions=0&appid={get_appId()}&norender=1&count=20000&start={i*100}", db_conn_str)
