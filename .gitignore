@@ -1,0 +1,10 @@
+# .gitignore
+
+# Ignore XML files
+*.xml
+
+# Ignore __pycache__ directories
+__pycache__/
+
+# Ignore .idea directories
+.idea/
