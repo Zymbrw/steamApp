@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/app.css') }}">
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+  <body>
+      <div class="sidenav">
+      <a href="#">ITEMS</a>
+      <a href="#">MY INVENTORY</a>
+      <a href="#">MY INTERESTS</a>
+    </div>
+
+    {% block content %}
+    {% endblock %}
+
+    {% block footer %}
+      <footer>
+        <p>&copy; My Web Application 2023</p>
+      </footer>
+    {% endblock %}
+  </body>
+</html>

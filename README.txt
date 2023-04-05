@@ -9,6 +9,7 @@
 pip install sqlalchemy
 pip install webdriver-manager
 pip install bs4
+pip install flask
 PS: posibil sa mai trebuiasca si alte installuri, dar nu mai stiu care erau
 6.rulezi database/createDb.py -> evident creeaza baza in forma actuala
 	

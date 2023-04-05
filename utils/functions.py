@@ -41,4 +41,7 @@ def get_listingsUrl():
 def get_chromeDriver():
     return get_config('chromeDriver')
 
+def get_itemsImagesUrl():
+    return get_config('itemsImagesUrl')
+
 
