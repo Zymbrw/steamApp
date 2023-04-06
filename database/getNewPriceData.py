@@ -5,8 +5,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.service import Service
 from bs4 import BeautifulSoup
 from sqlalchemy.orm import sessionmaker
-from database.dbClasses import *
-from utils.functions import *
+from steamApp.database.dbClasses import *
+from steamApp.utils.functions import *
 from datetime import datetime
 from sqlalchemy import create_engine, MetaData, inspect, Table
 import time
