@@ -1,13 +1,14 @@
 {
   "apiKey": "783JgPlzX__X9cwL781qN52bh5w",
-  "dbName": "csgoitems",
-  "pass": "12345",
+  "dbName": "neondb",
+  "pass": "LD1j0xdefONK",
   "appId": "730",
-  "server": "localhost",
+  "server": "ep-ancient-cherry-365870.eu-central-1.aws.neon.tech",
   "port": "5432",
-  "user": "postgres",
+  "user": "steamappapp",
+  "connString":"postgres://steamappapp:LD1j0xdefONK@ep-ancient-cherry-365870.eu-central-1.aws.neon.tech/neondb",
   "baseApiUrl": "https://steamcommunity.com/market/search/render/?",
   "listingsUrl": "https://steamcommunity.com/market/listings/",
   "itemsImagesUrl": "https://community.akamai.steamstatic.com/economy/image/",
-  "chromeDriver": "C:\\Program Files\\ChromeDriver\\chromedriver.exe"
+  "chromeDriver": "D:\\projects\\steamapp\\chromedriver_win32\\chromedriver.exe"
 }

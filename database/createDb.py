@@ -4,14 +4,14 @@ from database.dbClasses import *
 from sqlalchemy import create_engine, MetaData
 
 
-conn = psycopg2.connect(
-    dbname="postgres",
-    user="postgres",
-    password=get_pass(),
-    host=get_server(),
-    port=get_port()
-)
-
+# conn = psycopg2.connect(
+#     dbname="postgres",
+#     user="postgres",
+#     password=get_pass(),
+#     host=get_server(),
+#     port=get_port()
+# )
+conn = psycopg2.connect(get_db_connString())
 conn.autocommit = True
 cur = conn.cursor()
 cur.execute(f"SELECT datname FROM pg_catalog.pg_database WHERE datname = '{get_db_name()}';")

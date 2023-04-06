@@ -44,4 +44,7 @@ def get_chromeDriver():
 def get_itemsImagesUrl():
     return get_config('itemsImagesUrl')
 
+def get_db_connString():
+    return get_config('connString')
+
 
