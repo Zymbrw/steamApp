@@ -1,8 +1,8 @@
 from sqlalchemy.orm import sessionmaker
-from database.dbClasses import *
+from steamApp.database.dbClasses import *
 from sqlalchemy import create_engine, MetaData, inspect, Table, update
 from utils.functions import *
-from api.Items import get_item_latest_buy_orders, get_item_latest_sell_orders
+from steamApp.api.Items import get_item_latest_buy_orders, get_item_latest_sell_orders
 from sqlalchemy.exc import IntegrityError
 
 
