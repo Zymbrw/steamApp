@@ -1,6 +1,6 @@
 import psycopg2
-from steamApp.utils.constants import *
-from steamApp.database.dbClasses import *
+from utils.constants import *
+from database.dbClasses import *
 from sqlalchemy import create_engine, MetaData
 
 

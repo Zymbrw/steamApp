@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine, MetaData, Table
 import requests
-from steamApp.utils.constants import *
+from utils.constants import *
 
 
 engine = create_engine(db_conn_str)
