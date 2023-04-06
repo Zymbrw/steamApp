@@ -14,6 +14,9 @@ def get_config(property):
 def get_db_name():
     return get_config('dbName')
 
+def get_db_connString():
+    return get_config('connString')
+
 def get_pass():
     return get_config('pass')
 

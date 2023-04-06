@@ -13,8 +13,6 @@ from sqlalchemy import create_engine, MetaData
 #     port=get_port()
 # )
 
-#conn_string = f'postgresql://karenalo13:91CMVrdLIPka@ep-autumn-dream-433615.eu-central-1.aws.neon.tech/neondb'
-print(get_db_connString())
 conn = psycopg2.connect(get_db_connString())
 
 conn.autocommit = True
